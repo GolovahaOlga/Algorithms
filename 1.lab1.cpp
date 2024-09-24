@@ -1,4 +1,4 @@
-//  A program fr calculating the coordinates of a mathematical pendulum
+//  A program for calculating the coordinates of a mathematical pendulum
 #define _USE_MATH_DEFINES
 #include <iostream>
 #include <cmath>
