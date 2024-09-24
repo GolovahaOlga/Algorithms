@@ -11,7 +11,7 @@ int main(){
     int s;
     cout<<"Enter the coast of the product"<<endl;
     cin>>s;
-    int i,n,v,r,s1;
+    float i,n,v,r,s1;
     switch(k){
         case 1:
             cout<<"You can pay in cash, by check or get a credit"<<endl;
@@ -30,22 +30,27 @@ int main(){
                             cout<<"Intal cost "<<s<<" Final cost "<<v*0.6;
                             break;
                         case 3:
-                            cout<<"Enter the number of payments and the number of contributions "<<endl;
-                            cin>>i>>n;
+                            cout<<"Enter the number of payments (from 1 to 6)"<<endl;
+                            cin>>n;
                             s1=s;
                             cout<<"If the loan is platinum, enter 1. If the loan is business, enter 2 "<<endl;
                             cin>>r;
                             if (r==1){
                                 s=s*0.6;
-                                v=s*pow((1+i/100),n);
-                                v=v*1.05;
+                                v=s*pow((1+5/100),n);
                             }
-                            if (r==2){
+                            else if (r==2){
                                 s=s*0.6;
-                                v=s*pow((1+i/100),n);
-                                v=v*1.02;
+                                v=s*pow((1+2/100),n);
+                            }
+                            else{
+                                cout<<"Your value in the \"Loan type\" column does not match 1 or 2. Restart the program and enter the value according to the instructions."<<endl;
+                                break;
                             }
                             cout<<"Intal cost "<<s1<<" Final cost "<<v;
+                            break;
+                        default:
+                            cout<<"Your value in the \"Payment method\" column does not match 1 or 2 or 3. Restart the program and enter the value according to the instructions."<<endl;
                             break;
                     }
                     break;
@@ -61,23 +66,27 @@ int main(){
                             cout<<"Intal cost "<<s<<" Final cost "<<v*0.7;
                             break;
                         case 3:
-                            cout<<"enter the number of payments and the number of contributions "<<endl;
-                            cin>>i>>n;
+                            cout<<"Enter the number of payments (from 1 to 6)"<<endl;
+                            cin>>n;
                             s1=s;
                             cout<<"If the loan is platinum, enter 1. If the loan is business, enter 2 "<<endl;
                             cin>>r;
                             if (r==1){
                                 s=s*0.7;
-                                v=s*pow((1+i/100),n);
-                                v=v*1.05;
+                                v=s*pow((1+5/100),n);
                             }
-                            if (r==2){
+                            else if (r==2){
                                 s=s*0.7;
-                                v=s*pow((1+i/100),n);
-                                v=v*1.02;
-                     
+                                v=s*pow((1+2/100),n);
+                            }
+                            else{
+                                cout<<"Your value in the \"Loan type\" column does not match 1 or 2. Restart the program and enter the value according to the instructions."<<endl;
+                                break;
                             }
                             cout<<"Intal cost "<<s1<<" Final cost "<<v;
+                            break;
+                        default:
+                            cout<<"Your value in the \"Payment method\" column does not match 1 or 2 or 3. Restart the program and enter the value according to the instructions."<<endl;
                             break;
                     }
                     break;
@@ -93,25 +102,32 @@ int main(){
                             cout<<"Intal cost "<<s<<" Final cost "<<v*0.8;
                             break;
                         case 3:
-                            cout<<"Enter the number of payments and the number of contributions "<<endl;
-                            cin>>i>>n;
+                            cout<<"Enter the number of payments (from 1 to 6)"<<endl;
+                            cin>>n;
                             s1=s;
                             cout<<"If the loan is platinum, enter 1. If the loan is business, enter 2 "<<endl;
                             cin>>r;
                             if (r==1){
                                 s=s*0.8;
-                                v=s*pow((1+i/100),n);
-                                v=v*1.05;
-                            }
-                            if (r==2){
+                                v=s*pow((1+5/100),n);
+                            } 
+                            else if (r==2){
                                 s=s*0.8;
-                                v=s*pow((1+i/100),n);
-                                v=v*1.02;
+                                v=s*pow((1+2/100),n);
+                            } else {
+                                cout<<"Your value in the \"Loan type\" column does not match 1 or 2. Restart the program and enter the value according to the instructions."<<endl;
+                                break;
                             }
                             cout<<"Intal cost "<<s1<<" Final cost "<<v;
                             break;
+                        default:
+                            cout<<"Your value in the \"Payment method\" column does not match 1 or 2 or 3. Restart the program and enter the value according to the instructions."<<endl;
+                            break;
                     }
                     break;
+                default:
+                     cout<<"Your value in the \"Product category\" column does not match 1 or 2 or 3. Restart the program and enter the value according to the instructions."<<endl;
+                     break;
             }
             break;
         case 2:
@@ -131,22 +147,27 @@ int main(){
                             cout<<"Intal cost "<<s<<" Final cost "<<v*0.7;
                             break;
                         case 3:
-                            cout<<"Enter the number of payments and the number of contributions "<<endl;
-                            cin>>i>>n;
+                            cout<<"Enter the number of payments (from 1 to 6)"<<endl;
+                            cin>>n;
                             s1=s;
                             cout<<"If the loan is platinum, enter 1. If the loan is business, enter 2 "<<endl;
                             cin>>r;
                             if (r==1){
                                 s=s*0.7;
-                                v=s*pow((1+i/100),n);
-                                v=v*1.05;
+                                v=s*pow((1+5/100),n);
                             }
-                            if (r==2){
+                            else if (r==2){
                                 s=s*0.7;
-                                v=s*pow((1+i/100),n);
-                                v=v*1.02;
+                                v=s*pow((1+2/100),n);
+                            }
+                            else{
+                                cout<<"Your value in the \"Loan type\" column does not match 1 or 2. Restart the program and enter the value according to the instructions."<<endl;
+                                break;
                             }
                             cout<<"Intal cost "<<s1<<" Final cost "<<v;
+                            break;
+                        default:
+                            cout<<"Your value in the \"Payment method\" column does not match 1 or 2 or 3. Restart the program and enter the value according to the instructions."<<endl;
                             break;
                     }
                     break;
@@ -162,22 +183,27 @@ int main(){
                             cout<<"Intal cost "<<s<<" Final cost "<<v*0.8;
                             break;
                         case 3:
-                            cout<<"Enter the number of payments and the number of contributions "<<endl;
-                            cin>>i>>n;
+                            cout<<"Enter the number of payments (from 1 to 6)"<<endl;
+                            cin>>n;
                             s1=s;
                             cout<<"If the loan is platinum, enter 1. If the loan is business, enter 2 "<<endl;
                             cin>>r;
                             if (r==1){
                                 s=s*0.8;
-                                v=s*pow((1+i/100),n);
-                                v=v*1.05;
+                                v=s*pow((1+5/100),n);
                             }
-                            if (r==2){
+                            else if (r==2){
                                 s=s*0.8;
-                                v=s*pow((1+i/100),n);
-                                v=v*1.02;
+                                v=s*pow((1+2/100),n);
+                            }
+                            else{
+                                cout<<"Your value in the \"Loan type\" column does not match 1 or 2. Restart the program and enter the value according to the instructions."<<endl;
+                                break;
                             }
                             cout<<"Intal cost "<<s1<<" Final cost "<<v;
+                            break;
+                        default:
+                            cout<<"Your value in the \"Payment method\" column does not match 1 or 2 or 3. Restart the program and enter the value according to the instructions."<<endl;
                             break;
                     }
                     break;
@@ -193,24 +219,32 @@ int main(){
                             cout<<"Intal cost "<<s<<" Final cost "<<v*0.9;
                             break;
                         case 3:
-                            cout<<"Enter the number of payments and the number of contributions "<<endl;
-                            cin>>i>>n;
+                            cout<<"Enter the number of payments (from 1 to 6)"<<endl;
+                            cin>>n;
                             s1=s;
                             cout<<"If the loan is platinum, enter 1. If the loan is business, enter 2 "<<endl;
                             cin>>r;
                             if (r==1){
                                     s=s*0.9;
-                                    v=s*pow((1+i/100),n);
-                                    v=v*1.05;
+                                    v=s*pow((1+5/100),n);
                                 }
-                            if (r==2){
+                            else if (r==2){
                                     s=s*0.9;
-                                    v=s*pow((1+i/100),n);
-                                    v=v*1.02;
+                                    v=s*pow((1+2/100),n);
                                 }
+                            else{
+                                cout<<"Your value in the \"Loan type\" column does not match 1 or 2. Restart the program and enter the value according to the instructions."<<endl;
+                                break;
+                            }
                                 cout<<"Intal cost "<<s1<<" Final cost "<<v;
                             break;
+                        default:
+                            cout<<"Your value in the \"Payment method\" column does not match 1 or 2 or 3. Restart the program and enter the value according to the instructions."<<endl;
+                            break;
                     }
+                    break;
+                default:
+                    cout<<"Your value in the \"Product category\" column does not match 1 or 2 or 3. Restart the program and enter the value according to the instructions."<<endl;
                     break;
             }
             break;
@@ -231,6 +265,9 @@ int main(){
                             v=s*(1+(i*n)/100);
                             cout<<"Intal cost "<<s<<" Final cost "<<v*0.8;
                             break;
+                        default:
+                            cout<<"Your value in the \"Payment method\" column does not match 1 or 2. Restart the program and enter the value according to the instructions."<<endl;
+                            break;
                     }
                     break;
                 case 2:
@@ -245,6 +282,9 @@ int main(){
                             v=s*(1+(i*n)/100);
                             cout<<"Intal cost "<<s<<" Final cost "<<v*0.9;
                             break;
+                        default:
+                            cout<<"Your value  in the \"Payment method\"column does not match 1 or 2. Restart the program and enter the value according to the instructions."<<endl;
+                            break;
                         }
                     break;
                 case 3:
@@ -258,24 +298,36 @@ int main(){
                             v=s*(1+(i*n)/100);
                             cout<<"Intal cost "<<s<<" Final cost "<<v;
                             break;
+                        default:
+                            cout<<"Your value in the \"Payment method\"column does not match 1 or 2. Restart the program and enter the value according to the instructions."<<endl;
+                            break;
                     }
+                    break;
+                default:
+                    cout<<"Your value in the \"Product category\" column does not match 1 or 2 or 3. Restart the program and enter the value according to the instructions."<<endl;
                     break;
             }
             break;
         case 4:
             cout<<"You can pay in cash"<<endl;
             switch(p){
-                    case 1:
-                        cout<<"Intal cost "<<s<<" Final cost "<<s;
-                        break;
-                    case 2:
-                        cout<<"Intal cost "<<s<<" Final cost "<<s*1.05;
-                        break;
-                    case 3:
-                        cout<<"Intal cost "<<s<<" Final cost "<<s*1.1;
-                        break;
+                case 1:
+                    cout<<"Intal cost "<<s<<" Final cost "<<s;
+                    break;
+                case 2:
+                    cout<<"Intal cost "<<s<<" Final cost "<<s*1.05;
+                    break;
+                case 3:
+                    cout<<"Intal cost "<<s<<" Final cost "<<s*1.1;
+                    break;
+                default:
+                    cout<<"Your value in the \"Product category\" column does not match 1 or 2 or 3. Restart the program and enter the value according to the instructions."<<endl;
+                    break;
                 }
              break;
+        default :
+            cout<<"Your value in the \"Client category\" column does not match 1 or 2 or 3 or 4. Restart the program and enter the value according to the instructions."<<endl;
+            break;
 
     }
     return 0;
